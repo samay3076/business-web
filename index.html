@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samay Samrat - Digital Artist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <!-- <img src= "alt="SS Logo" class="logo-image"> -->
+                    QuantumHue
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <button class="nav-link active" data-page="home">Home</button>
+                    <button class="nav-link" data-page="about">About</button>
+                    <button class="nav-link" data-page="work">My Work</button>
+                    <button class="nav-link" data-page="services">Services</button>
+                    <button class="nav-link" data-page="contact">Contact</button>
+                    <button class="theme-toggle" id="themeToggle">
+                        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </button>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section id="home" class="page active">
+            <div class="hero">
+                <video class="hero-video" autoplay loop muted playsinline>
+                    <source src="clip.mp4" type="video/mp4">
+                </video>
+                <!-- <img src="logo.jpeg" alt="Logo Overlay" class="hero-logo"> -->
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="badge">Logo Designer & Digital Artist</span>
+                        <h1>Samay</h1>
+                        <p>Transforming ideas into captivating visual experiences.Specializing in Logo Designing, digital art, and creative design solutions.</p>
+                        <div class="cta-buttons">
+                            <button class="btn primary" onclick="navigateToPage('work')">
+                                View My Work
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </button>
+                            <button class="btn secondary" onclick="navigateToPage('contact')">Get in Touch</button>
+                        </div>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-number">700K+</div>
+                                <div class="stat-label">YouTube</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Logo Design</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">Creative Collaborations</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2X</div>
+                                <div class="stat-label">YouTube Creator Award</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="page">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="image.jpeg" alt="Designer at work">
+                    </div>
+                    <div class="about-content">
+                        <p>   I'm passionate YouTuber, logo designer, digital artist, and creator with over more than 3 years of experience.  My approach combines modern design principles with innovative techniques to deliver unique and impactful solutions.</p>
+                        <h3>Tools I Use</h3>
+                        <div class="tools-grid">
+                            <div class="tool-item">Adobe Photoshop</div>
+                            <div class="tool-item">Adobe Illustrator</div>
+                            <div class="tool-item">Figma</div>
+                            <div class="tool-item">After Effects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work" class="page">
+            <div class="container">
+                <h2>My Work</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="one.jpg" alt="Brand Identity">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Logo Design</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="que.jpg" alt="QuantumHue">
+                        <div class="portfolio-overlay">
+                            <h3>QuantumHue</h3>
+                            <p>Coming Soon!</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="artist.jpg" alt="My Art Gallary">
+                        <div class="portfolio-overlay">
+                            <h3>My Art Gallary</h3>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="cile.jpg" alt="DropShipping">
+                        <div class="portfolio-overlay">
+                            <h3>DropShipping</h3>
+                            <p>Selling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="page">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">🎨</div>
+                        <h3>Logo Design</h3>
+                        <p>Custom logos that capture your brand's essence</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">💻</div>
+                        <h3>QuantumHue</h3>
+                        <p>Launching Soon!</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">📈</div>
+                        <h3>Brand Identity & Strategy</h3>
+                        <p>From Logo to Vision - We shape how the world sees your brands.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">🎯</div>
+                        <h3>DropShipping</h3>
+                        <p>Preparing to offer end-to-end dropshipping store setup and branding <br> - stay tuned!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="page">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-grid">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <a href="https://www.linkedin.com/in/samaysamrat/" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/chemist.gamer/" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.youtube.com/@futxsamay" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
